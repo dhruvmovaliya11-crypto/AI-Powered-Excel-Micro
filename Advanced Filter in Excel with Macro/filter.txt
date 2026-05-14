@@ -1,0 +1,15 @@
+Sub dhruv()
+'
+' dhruv Macro
+'
+' Keyboard Shortcut: Ctrl+Shift+M
+'
+
+Application.EnableEvents = False
+
+    Range("A1:H15").AdvancedFilter Action:=xlFilterCopy, CriteriaRange:=Range( _
+        "J1:J2"), CopyToRange:=Range("L1:S1"), Unique:=False
+        
+Application.EnableEvents = True
+
+End Sub
